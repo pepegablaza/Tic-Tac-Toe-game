@@ -1,0 +1,44 @@
+/*
+    Creating X
+*/
+.board-field.x::before,
+.board-field.x::after {
+	content: "";
+	position: absolute;
+	width: calc(183.33px * 0.15);
+	height: 183.33px;
+	background: black;
+}
+
+.board-field.x::before {
+	transform: rotate(45deg);
+}
+
+.board-field.x::after {
+	transform: rotate(-45deg);
+}
+/*
+    Creating O
+*/
+.board-field.o::before,
+.board-field.o::after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background: white;
+}
+
+.board-field.o::before {
+	width: 160px;
+	height: 160px;
+}
+
+.board-field.o::after {
+	width: calc(183.33px * 0.6);
+	height: calc(183.33px * 0.6);
+	background-color: #5d54ff;
+}
+.board-field.x,
+.board-field.o:hover {
+	cursor: not-allowed;
+}

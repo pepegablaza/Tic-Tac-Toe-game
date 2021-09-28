@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #5d54ff;
+	font-family: "Shadows Into Light", cursive;
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,42 @@
+/*
+    Game Board
+*/
+.board {
+	width: 550px;
+	min-height: 550px;
+	background-color: #5d54ff;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	margin-top: 5em;
+}
+.board-field {
+	border: 7px solid #312c82;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+/*
+    Table-Fields Border Delete
+*/
+.board-field:first-child,
+.board-field:nth-child(4),
+.board-field:nth-child(7) {
+	border-left: none;
+}
+.board-field:nth-child(3),
+.board-field:nth-child(6),
+.board-field:nth-child(9) {
+	border-right: none;
+}
+.board-field:first-child,
+.board-field:nth-child(2),
+.board-field:nth-child(3) {
+	border-top: none;
+}
+.board-field:nth-child(7),
+.board-field:nth-child(8),
+.board-field:nth-child(9) {
+	border-bottom: none;
+}
